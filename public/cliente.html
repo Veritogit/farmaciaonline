@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Área Cliente - Farmacia Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Farmacia Online</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="login.html">Login</a>
+        <a href="cliente.html">Área Cliente</a>
+        <a href="recetas.html">Recetas</a>
+        <a href="pago.html">Pago TPV</a>
+        <a href="admin.html">BackOffice</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Área de cliente</h2>
+    <p>Consulta de pedidos del cliente.</p>
+
+    <label>ID de usuario</label>
+    <input type="number" id="usuarioId" value="1">
+
+    <button onclick="consultarPedidos()">Consultar pedidos</button>
+
+    <div id="pedidos"></div>
+
+    <section class="warning">
+      <h3>Vulnerabilidad educativa</h3>
+      <p>
+        Si se cambia el ID del usuario en la URL o en el formulario, se podrían consultar pedidos de otro cliente.
+        Esto representa un caso de Broken Access Control.
+      </p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

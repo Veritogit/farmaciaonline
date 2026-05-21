@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Recetas - Farmacia Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Farmacia Online</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="login.html">Login</a>
+      <a href="cliente.html">Área Cliente</a>
+      <a href="recetas.html">Recetas</a>
+      <a href="pago.html">Pago TPV</a>
+      <a href="admin.html">BackOffice</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Gestión de recetas</h2>
+    <p>
+      Esta sección simula la consulta de recetas asociadas a un cliente.
+      En una farmacia real, esta información sería especialmente sensible y debería estar protegida.
+    </p>
+
+    <label>ID de usuario</label>
+    <input type="number" id="recetaUsuarioId" value="1">
+
+    <button onclick="consultarRecetas()">Consultar recetas</button>
+
+    <div id="recetas"></div>
+
+    <section class="warning">
+      <h3>Vulnerabilidad educativa</h3>
+      <p>
+        Esta funcionalidad permite consultar recetas introduciendo manualmente el ID del usuario.
+        Esto representa un fallo de control de acceso, ya que un usuario podría intentar acceder
+        a información médica de otro cliente.
+      </p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>BackOffice - Farmacia Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Farmacia Online</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="login.html">Login</a>
+        <a href="cliente.html">Área Cliente</a>
+        <a href="recetas.html">Recetas</a>
+        <a href="pago.html">Pago TPV</a>
+        <a href="admin.html">BackOffice</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>BackOffice interno</h2>
+    <p>Gestión de stock, productos, proveedores y precios.</p>
+
+    <button onclick="cargarStockAdmin()">Cargar stock interno</button>
+
+    <div id="stockAdmin"></div>
+
+    <section class="warning">
+      <h3>Vulnerabilidad educativa</h3>
+      <p>
+        Esta sección simula un BackOffice que debería estar protegido, pero actualmente no valida
+        correctamente el rol del usuario.
+      </p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

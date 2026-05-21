@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Farmacia Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Farmacia Online</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="login.html">Login</a>
+        <a href="cliente.html">Área Cliente</a>
+        <a href="recetas.html">Recetas</a>
+        <a href="pago.html">Pago TPV</a>
+        <a href="admin.html">BackOffice</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Venta online de productos farmacéuticos</h2>
+      <p>Aplicación educativa para analizar vulnerabilidades OWASP en una farmacia online.</p>
+    </section>
+
+    <section>
+      <h2>Buscar producto</h2>
+      <input type="text" id="busqueda" placeholder="Ejemplo: Paracetamol">
+      <button onclick="buscarProducto()">Buscar</button>
+      <div id="resultadoBusqueda"></div>
+    </section>
+
+    <section>
+      <h2>Productos disponibles</h2>
+      <div id="productos" class="grid"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

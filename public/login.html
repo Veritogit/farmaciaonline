@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Farmacia Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Farmacia Online</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="login.html">Login</a>
+        <a href="cliente.html">Área Cliente</a>
+        <a href="recetas.html">Recetas</a>
+        <a href="pago.html">Pago TPV</a>
+        <a href="admin.html">BackOffice</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Inicio de sesión</h2>
+
+    <form id="loginForm">
+      <label>Email</label>
+      <input type="email" id="email" placeholder="cliente@farmacia.com">
+
+      <label>Contraseña</label>
+      <input type="password" id="password" placeholder="123456">
+
+      <button type="submit">Entrar</button>
+    </form>
+
+    <div id="loginResultado"></div>
+
+    <section class="info">
+      <h3>Usuarios de prueba</h3>
+      <p>Cliente: cliente@farmacia.com / 123456</p>
+      <p>Admin: admin@farmacia.com / admin123</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "farmacia",
+  "version": "1.0.0",
+  "description": "Web App educativa para aplicar S-SDLC, DevSecOps y análisis de vulnerabilidades OWASP.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "audit": "npm audit"
+  },
+  "keywords": [
+    "seguridad",
+    "devsecops",
+    "owasp",
+    "farmacia"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "lodash": "^4.17.15"
+  }
+}
